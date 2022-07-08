@@ -1,8 +1,42 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        
-    </body>
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <title>Dice Game</title>
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAA
+        AADR0dEAAAAAAOjo6ACZmZkAKysrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERERERERERE
+        RMzMzMxERERAzEzMTMREREAMzMzMxEREQAiIiIiERERACRCJEIREREQJEIkQhEREQAiIiIiERERACIiIiIREREAJEIkQhEREQAkQiRCERERECIi
+        IiIRERERERERERERERERERERERERERERERERH//wAA//8AAPAPAADgBwAA4AcAAOAHAADgBwAA4AcAAOAHAADgBwAA4AcAAOAHAADwBwAA//8AAP//AAD//wAA"
+        rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <h1>🎲DICE GAME🎲</h1>
+    </header>
+    <div class="container">
+        <h2 id="message">✅Player 1 Turn</h2>
+        <div class="players">
+            <div calss="player1">
+                <h2>Player1 Score:
+                    <span id="player1ScoreBoard">0</span>
+                </h2>
+                <div id="player1Dice" class="dice active">-</div>
+            </div>
+
+            <div class="player2">
+                <h2>Player2 Score:
+                    <span id="player2ScoreBoard">0</span>
+                </h2>
+                <div id="player2Dice" class="dice">-</div>
+            </div>
+        </div>
+        <button id="rollBtn">Roll Dice 🎲</button>
+        <button id="resetBtn">Reset Game 🔁</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
 </html>
